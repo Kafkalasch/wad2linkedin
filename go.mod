@@ -1,4 +1,4 @@
-module wad2linkedin
+module github.com/Kafkalasch/wad2linkedin
 
 go 1.20
 

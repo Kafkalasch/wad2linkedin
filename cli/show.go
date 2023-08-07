@@ -3,12 +3,12 @@ package cli
 import (
 	"bufio"
 	"fmt"
+	"github.com/Kafkalasch/wad2linkedin/browser"
+	"github.com/Kafkalasch/wad2linkedin/data"
 	"github.com/spf13/cobra"
 	"os"
 	"strconv"
 	"strings"
-	"wad2linkedin/browser"
-	"wad2linkedin/data"
 )
 
 var showCmd = &cobra.Command{
@@ -55,7 +55,7 @@ func showLeads(cmd *cobra.Command, args []string) {
 		fmt.Println("Lead:")
 		lead.PrintInfo()
 		fmt.Println("")
-		
+
 		err = browser.OpenSearchInLinked(keywords)
 		if err != nil {
 			fmt.Printf("error opening browser: %v\n", err)

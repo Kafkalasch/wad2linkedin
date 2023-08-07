@@ -1,7 +1,7 @@
 package main
 
 import (
-	"wad2linkedin/cli"
+	"github.com/Kafkalasch/wad2linkedin/cli"
 )
 
 func main() {
