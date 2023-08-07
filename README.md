@@ -22,3 +22,18 @@ You'll need to have Go installed to be able to run the following script which wi
 ```bash
 ./build.sh
 ```
+
+## Usage
+
+The latest docs are in the cli's help message:
+```bash
+wad2linkedin --help
+```
+
+To run the tool, you'll need to export the contacts from the WAD app. You can obtain these by visiting your 
+[Contacts](https://worldcongress.app.swapcard.com/contacts) and then clicking on the "Download" button below "Export my contacts".
+
+Then start the tool via
+```bash
+wad2linkedin show --file <path-to-excel-export>
+```
